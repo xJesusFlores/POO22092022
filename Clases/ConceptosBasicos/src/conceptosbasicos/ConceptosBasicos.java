@@ -4,6 +4,10 @@
  */
 package conceptosbasicos;
 
+import ico.fes.Automovil;
+import ico.fes.Silla;
+import java.awt.Color;
+
 /**
  *
  * @author Flores
@@ -16,6 +20,30 @@ public class ConceptosBasicos {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("hi");
+        Silla s1 = new Silla();
+        System.out.println(s1);  //Por defecto se invoca toString ()
+        /*Class Object*/
+        System.out.println(s1.toString());
+        
+        Automovil miBocho = new Automovil(); //Constructor **
+        miBocho.setMarca("Volkswagen");
+        miBocho.setSubMarca("Sedan");
+        miBocho.setModelo(1970);
+        miBocho.setColor(Color.blue);
+        
+        System.out.println(miBocho);  //toString ();
+        
+        Automovil miMustang = new Automovil("Ford", "Mustang", 2010, Color.yellow); /*Constructor Sobrecargado ** --Se declaran variables 
+                                                                                        y al mismo tiempo se asignan valores  ejemplo: int a = 10 */
+        System.out.println(miMustang);
+        
+        
+        
+        Automovil Akura = new Automovil("Akura", "NSX", 2013, Color.gray);
+        System.out.println(Akura);
+        
+
     }
+    
     
 }
